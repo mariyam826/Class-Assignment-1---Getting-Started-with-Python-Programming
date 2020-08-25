@@ -1,0 +1,50 @@
+1. if_name_=="_main_":
+      
+     string1 =input("Enter the first string")
+     string2 =input("Enter the second string")
+
+      if(string1==string2):
+        print("strings are equal")
+      else:
+        print("not equal")
+
+2.  a=input("enter a:")
+    b=input("enter b:")
+    s=a+b;
+    print(a,'+',b,'=',s);
+
+3.  import math
+
+    a=input("enter the number: ");
+    print('square root of', a, '= ', math.sqrt(a))
+
+4.  a=input('enter the base: ')
+    b=input('enter the height: ')
+    area=(0.5*a*b)
+    print('area of triangle = ', area)
+
+5.  c=('enter the temperature in celcius: ')
+    f=(c*(9/5))+32;
+    print('Fahrenheit equivalent of ',c, '=' , f);
+
+6.  a=input('enter the number: ')
+    if a<0 :
+       print(a, ' is negative')
+    elseif a>0
+       print(a, ' is positive')
+    else 
+       print(a, ' is zero')
+
+7.  a=input('enter the first number: ')
+    b=input('enter the second number: ')
+    c=input('enter the third number: ')
+
+   if (a>b):
+     if(a>c):
+       print(a, 'is largest')
+     else
+       print(c,' is largest')
+   elseif (b>c) :
+     print(b, 'is largest')
+   else 
+     print(c, 'is largest')
