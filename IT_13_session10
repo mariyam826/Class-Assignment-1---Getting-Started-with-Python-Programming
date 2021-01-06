@@ -1,0 +1,61 @@
+# Write a python program to check if a number is armstrong or not #
+
+num = int(input("enter the number"))
+order = len(str(num))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** order
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+
+# Write a Python program to check whether three given lengths (integers) of three sides form a right triangle.
+Print "Yes" if the given sides form a right triangle otherwise print "No". #
+
+print("Input three integers(sides of a triangle)")
+int_num = list(map(int,input().split()))
+x,y,z = sorted(int_num)
+if x**2+y**2==z**2:
+    print('Yes')
+else:
+    print('No')
+
+
+#  Write a Python program to print the number of prime numbers which are less than or equal to a given integer #
+
+primes = [1] * 500000
+primes[0] = 0 
+for i in range(3, 1000, 2):
+    if primes[i // 2]:
+        primes[(i * i) // 2::i] = [0] * len(primes[(i * i) // 2::i]) 
+print("Input the number(n):")
+n=int(input())
+if n < 4:
+    print("Number of prime numbers which are less than or equal to n.:",n - 1)
+else:
+    print("Number of prime numbers which are less than or equal to n.:",sum(primes[:(n + 1) // 2]) + 1)
+
+
+#  Write a python program to  convert Celsius  into  Fahrenheit #
+
+def Fahrenheit_Temp(Tc): 
+	return (180*Tc/100)+32   
+Celsius=int(input('Enter the Temperature on Celsius scale.')) 
+print("The temperature on Fahrenheit Scale is:") 
+print(Fahrenheit_Temp(Celsius))
+
+
+# Write a Python program that will accept the base and height of a triangle and compute the area #
+
+b = int(input("Input the base : "))
+h = int(input("Input the height : "))
+area = b*h/2
+print("area = ", area)
+
+
+   
